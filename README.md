@@ -32,6 +32,9 @@ Anaconda was downloaded manually (**TODO: do this in the playbook instead?**) an
 
 To sync over data to the cluster the pexpect Python module is required. Load the ansible-env Python environment and then run `pip install pexpect`. 
 
+TODO: To create secret tokens for the web proxy we need the library pyjwt installed in the ansible environment: `pip install pyjwt` 
+
+
 Note that in general we want all our directories to be setgid the ngi-sw group, but when the files under `/lupus/ngi/sw/anaconda` has this flag set it will break the virtual environment. 
 
 ## Operational dependencies
